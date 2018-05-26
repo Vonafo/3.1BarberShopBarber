@@ -272,6 +272,14 @@ main{
   margin-top: 60px;
   width: 48%;
 }
+.gallery img{
+    border: 7px solid #fff;
+    display:  block;
+    margin-top: 30px;
+}
+.gallery button{
+    margin-top: 31px;
+}
 .fornews {
   padding-top: 30px;
 }
@@ -299,19 +307,6 @@ main{
   font-size: 14px;
   text-decoration: none;
   font-weight: bold;
-}
-.forslide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  background: #fff;
-  height: 188px;
-  margin-top: 30px;
-}
-.forslide img {
-  height: 170px;
-  width: 290px;
 }
 .controls {
   display: flex;
@@ -468,11 +463,15 @@ input:focus {
       margin-top: 0;
       margin-bottom: 30px;
     }
-    .forslide {
+    .gallery img {
       margin: 15px auto;
     }
     .controls{
-      justify-content: space-around;
+        flex-wrap: wrap;
+      justify-content: center;
+    }
+    .controls button, .aboutUs button , .getfeedback input[type="submit"]{
+        width: 270px;
     }
     .generalBtn{
       margin: 35px auto;
@@ -553,6 +552,6 @@ input:focus {
   }
   .close {
     top: -30px;
-    right: 0px;
+    right: 0;
     }
 }
