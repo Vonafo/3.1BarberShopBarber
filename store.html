@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/store.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>STORE</title>
+</head>
+<body>
+  <header>
+    <div class="navContainer">
+      <img class="mobileLogo" src="css/img/smalllogo.png" alt="">
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="list"></label>
+      <div class="burger">
+        <ul>
+          <li class="lazyCoder"><a href="#">ИНФОРМАЦИЯ</a></li>
+          <li class="lazyCoder"><a href="#">НОВОСТИ</a></li>
+          <li class="lazyCoder"><a href="pricelist.html">ПРАЙС-ЛИСТ</a></li>
+          <li class="lazyCoder"><a href="store.html">МАГАЗИН</a></li>
+          <li class="lazyCoder"><a href="#">КОНТАКТЫ</a></li>
+          <li class="lazyCoder"><a сlass="enter" href="#modal">ВХОД</a></li>
+        </ul>
+      </div>
+      <ul class="desktop">
+        <li><a href="index.html"><img class="backToMain" src="css/img/smalllogo.png" alt=""></a></li>
+        <li><a href="#">ИНФОРМАЦИЯ</a></li>
+        <li><a href="#">НОВОСТИ</a></li>
+        <li><a href="pricelist.html">ПРАЙС-ЛИСТ</a></li>
+        <li class="active"><a href="store.html">МАГАЗИН</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li>
+      </ul>
+      <div class="beforeEnter">
+        <a сlass="enter" href="#modal">ВХОД</a>
+      </div>
+      <div id="modal" class="showmodal">
+        <div class="login">
+        <a class="close" href="#close"><img src="css/img/closemodal.png" alt=""></a>
+        <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+        <p>ВВедите пожалуйста свой логин и пароль</p>
+        <div class="loginform">
+          <div class="forname"><input placeholder="ЛОГИН" type="text"> <img src="css/img/user.png" alt=""></div>
+          <div class="forpassword"><input placeholder="ПАРОЛЬ" type="password"><img disabled src="css/img/password.png" alt=""></div>
+          <input type="checkbox" id="remember">
+          <label for="remember">ЗАПОМНИТЬ МЕНЯ</label>
+          <p class="forgetpass">Я ЗАБЫЛ ПАРОЛЬ!</p>
+          <input type="submit" class="brownHover" value="ВОЙТИ">
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="price">
+      <h2>СРЕДСТВА ДЛЯ УХОДА</h2>
+      <ul>
+        <li>главная</li>
+        <li class="smallSqr blackColor">МАГАЗИН</li>
+        <li class="smallSqr">СРЕДСТВА ДЛЯ УХОДА</li>
+     </ul>
+      <div class="formsForStore">
+        <div class="generator">
+          <h2>ПРОИЗВОДИТЕЛИ:</h2>
+          <form action="">
+          <div class="test">
+          <input type="checkbox" id="baxter">
+          <label for="baxter">Baxter of California</label></div>
+          <input type="checkbox" id="natty">
+          <label for="natty">Mr Natty</label>
+          <input type="checkbox" id="suavecito">
+          <label for="suavecito">Suavecito</label>
+          <input type="checkbox" id="malin">
+          <label for="malin">Malin+Goetz</label>
+          <input type="checkbox" id="murray">
+          <label for="murray">Murray’s</label>
+          <input type="checkbox" id="american">
+          <label for="american">American Crew</label>
+          <h2>ГРУППЫ ТОВАРОВ:</h2>
+          <input name="types" type="radio" id="shave">
+          <label class="lazyCircle" for="shave">Бритвенные принадлежности</label>
+          <input name="types" type="radio" id="care">
+          <label class="lazyCircle" for="care">Средства для ухода</label>
+          <input name="types" type="radio" id="accessory">
+          <label class="lazyCircle"  for="accessory">Аксессуары</label>
+        </form>
+        <button class="generalBtn brownHover submitForms"><a href="#">ПОКАЗАТЬ</a></button>
+        </div>
+        <div class="gridOfGoods">
+          <div class="goods">
+              <img src="css/img/item1.png" alt="">
+              <p>Набор для путешествий <br> «Baxter of California»</p>
+              <div class="greyPrice">
+                <p>2 900 РУБ.
+                  <button class="buy generalBtn brownHover "><a href="#">КУПИТЬ</a></button>
+                </p>
+              </div>
+            </div>
+          <div class="goods">
+              <img src="css/img/item2.png" alt="">
+              <p>Увлажняющий кондиционер <br> «Baxter of California»</p>
+              <div class="greyPrice">
+                <p>750 РУБ.
+                  <button class="buy generalBtn brownHover "><a href="#">КУПИТЬ</a></button>
+                </p>
+             </div>
+          </div>
+          <div class="goods">
+              <img src="css/img/item3.png" alt="">
+              <p>Гель для волос <br> «SUAVECITO»</p>
+              <div class="greyPrice">
+                <p>290 РУБ.
+                  <button class="buy generalBtn brownHover "><a href="#">КУПИТЬ</a></button>
+                </p>
+              </div>
+          </div>
+          <div class="goods">
+              <img src="css/img/item4.png" alt="">
+              <p>Глина для укладки волос <br> «American crew»</p>
+              <div class="greyPrice">
+                <p>500 РУБ.
+                <button class="buy generalBtn brownHover "><a href="#">КУПИТЬ</a></button>
+                </p>
+              </div>
+          </div>
+          <div class="goods">
+              <img src="css/img/item5.png" alt="">
+              <p>Гель для волос <br> «AMERICAN CREW»</p>
+              <div class="greyPrice">
+                <p>300 РУБ.
+                <button class="buy generalBtn brownHover "><a href="#">КУПИТЬ</a></button>
+                </p>
+              </div>
+          </div>
+          <div class="goods last">
+              <img src="css/img/item6.png" alt="">
+              <p>Набор для бритья <br> «Baxter of California»</p>
+              <div class="greyPrice">
+                <p>3 900 РУБ.
+                <button class="buy generalBtn brownHover "><a href="#">КУПИТЬ</a></button>
+                </p>
+              </div>
+          </div>
+          <div class="pages last">
+            <div class="forPosition">
+              <div class="blackPage brownHover"><p>1</p></div>
+              <div class="whitePage"><p>2</p></div>
+              <div class="blackPage brownHover"><p>3</p></div>
+              <div class="blackPage brownHover"><p>4</p></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="footerContainer">
+      <div class="smallContact">
+        <p>БАРБЕРШОП "БОРОДИНСКИЙ"</p>
+        <p>АДРЕС: Г.САНКТ-ПЕТЕРБУРГ, Б.КОНЮШЕННАЯ,Д.19/8</p>
+        <p class="underline">ГДЕ НАС НАЙТИ?</p>
+        <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+      </div>
+      <div class="social">
+        <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+        <div class="socialIcons">
+          <div class="vk whiteHover">
+            <img src="css/img/vk.png" alt="" class="white">
+            <img src="css/img/vkblack.png" alt="" class="black">
+          </div>
+          <div class="fb whiteHover">
+            <img src="css/img/fb.png" alt=""class="white">
+            <img src="css/img/fbblack.png" alt="" class="black">
+          </div>
+          <div class="insta whiteHover">
+            <img src="css/img/instagram.png" alt="" class="white">
+            <img src="css/img/instagramblack.png" alt="" class="black">
+          </div>
+        </div>
+      </div>
+      <div class="creators">
+        <p class="forAuthor">РАЗРАБОТАНО!</p>
+        <div class="vonafo whiteHover"><p>VONAFO</p></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
