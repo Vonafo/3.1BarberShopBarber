@@ -25,7 +25,7 @@
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
- /* display: block;*/
+  display: block;
   margin-bottom: 25px;
 }
 .generator form{
@@ -33,9 +33,10 @@
 }
 .generator label::before{
   position: absolute;
-  top: -3px;
+  top: 0;
   left: 0;
-  margin-right:20px;
+  bottom: 0;
+  margin:auto;
   content: "";
   width: 20px;
   height: 20px;
@@ -131,10 +132,6 @@
   float: left;
   width: 100%;
 }
-/*.forPosition{
-  position: absolute;
-  left: 260px;
-}*/
 .blackPage , .whitePage{
   display: inline-block;
   text-align: center;
@@ -152,24 +149,39 @@
 .whitePage{
   background: #fff;
   color: #000;
+}@media only screen and (max-width:1024px){
+    .price {
+        padding: 10px;
+    }
 }
-
-.test{
-    vertical-align: middle;
-    display: inline-block;
-}
-@media only screen and (max-width:959px) {
-  .generator{
-    width: auto;
+@media only screen and (min-width:769px ) and (max-width:979px) {
+  .generator {
+      width: auto;
   }
+    .gridOfGoods{
+        width: 100%;
+    }
+    .price {
+        padding: 10px;
+    }
   .generator label{
     display: inline-block;
   }
 }
 @media only screen and (max-width:768px) {
-  .gridOfGoods{
-    width: auto;
-  }
+    .generator{
+        width: auto;
+        margin-right: 5px;
+    }
+    .price {
+        padding: 10px;
+    }
+    .gridOfGoods{
+      width: auto;
+    }
+    .generator label{
+        display: inline-block;
+    }
   .goods {
     width: 45%;
     margin: 1% calc(10%/4);
@@ -182,6 +194,9 @@
   }
 }
 @media only screen and (max-width:450px){
+    .submitForms {
+        width: 85%;
+    }
   .goods {
     width: 99%;
     margin: 1%;

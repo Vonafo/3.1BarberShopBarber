@@ -1,4 +1,5 @@
 @import "style.css";
+
 body{
   background-image: url(img/whtebg.png);
   background-repeat: no-repeat;
@@ -74,7 +75,7 @@ body{
   font-size: 24px;
 }
 .instruments {
-  min-width: 490px;
+  width: 380px;
 }
 .instruments ul{
   margin-top: 40px;
@@ -90,7 +91,7 @@ body{
   position: relative;
 }
 .instruments li::before{
-  left:0px;
+  left:0;
   bottom: 5px;
   content: "";
   position: absolute;
@@ -100,7 +101,8 @@ body{
   background: #000;
 }
 .priceTable {
-  min-width:470px;
+  width:460px;
+  padding-left: 100px;
 }
 table, tr, td {
   margin-top: 70px;
@@ -126,14 +128,26 @@ table td {
   flex-wrap: wrap;
 }
 .fewWords p {
-  padding-top: 40px;
-  font-size: 14px;
-  font-weight: bold;
+    padding-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.fastWidthForP{
+    width: 380px;
 }
 .fastFix{
-  padding-left: 30px;
+    width: 560px;
+    padding-left: 100px;
+}
+@media only screen and (min-width: 960px) and (max-width:1024px){
+    .words, .fewWords, .bestchoise, .hyperlinks {
+        padding-left: 10px;
+    }
 }
 @media only screen and (max-width:959px){
+    .hyperlinks{
+        padding-left: 10px;
+    }
   .words {
     text-align: center;
     margin: 35px 0;
@@ -142,8 +156,9 @@ table td {
     font-size: 27px;
   }
   .instruments , .priceTable {
-    min-width: auto;
-    width: 100%;
+        padding-left: 0;
+        min-width: auto;
+        width: 100%;
 
   }
    .instruments h2 , .priceTable h2{
@@ -158,7 +173,7 @@ table td {
    .fewWords p {
      width: 100%;
      text-align: center;
-     padding: 5px 0;
+     padding: 10px;
    }
    .instruments ul {
      text-align: center;
@@ -176,10 +191,10 @@ table td {
       width: 100px;
       height: 40px;
     }
-  }
-
+}
 @media only screen and (max-width:425px) {
-  h2 {
+    h2 {
     font-size: 18px !important;
-  }
+    }
+
 }
