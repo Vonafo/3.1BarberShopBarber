@@ -137,11 +137,14 @@ ul.desktop li.active a:after {
   right: 0;
   margin: auto;
   z-index: 9999;
-  width:50%;
-  height: 48%;
+  width:75%;
+  height: 55%;
   position: fixed;
   pointer-events: none;
-  background: #fff;
+  background: rgba(255,255,255 0);
+}
+.showmap iframe{
+  border: 7px solid #fff;
 }
 .showmodal:target , .showmap:target{
   display: block;
@@ -504,8 +507,8 @@ input:focus {
       padding: 5px;
     }
     .close {
-      left: 215px;
-      top: 10px;
+      top: -30px;
+      right: -30px;
     }
     .forAuthor{
       text-align: center;
@@ -513,11 +516,12 @@ input:focus {
     .vonafo{
       float: none;
     }
+    .showmodal {
+      max-width: 335px;
+    }
 }
-@media only screen  and (max-width:325px) {
-  *{
-    font-size: 12px;
-  }
+@media only screen  and (max-width:350px) {
+
   .news , .gallery ,.contactInfo , .getfeedback {
     padding-left: 5px;
     }
@@ -527,8 +531,28 @@ input:focus {
   .list{
   display: block;
   }
+  .showmodal{
+    width: 300px;
+  }
+  .showmodal input[type="text"] , input[type="password"]{
+    display: block;
+    width: 270px;
+    margin: 20px auto;
+  }
+  .showmodal input[type="submit"]{
+    width: 270px;
+    display: block;
+    margin: 20px auto;
+  }
+  .forname img, .forpassword img{
+    right: 40px;
+    top:15px;
+  }
+  .forgetpass{
+    margin-left: 5px;
+  }
   .close {
-    left: 200px;
-    top: 10px;
+    top: -30px;
+    right: 0px;
     }
 }
