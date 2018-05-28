@@ -18,18 +18,24 @@ body{
 }
 .price li{
     font-weight: bold;
-    margin-right: 40px;
-    padding-top: 30px;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding-left: 25px;
     font-size: 14px;
     display: inline-block;
+}
+.noneSqr{
+    padding-left: 0 !important;
 }
 .smallSqr {
     position: relative;
     color: #aba9a7;
 }
 .smallSqr::after {
-    left:-25px;
-    bottom: 5px;
+    left:0;
+    bottom:0;
+    top: 0;
+    margin: auto;
     content: "";
     position: absolute;
     width: 7px;
@@ -196,5 +202,11 @@ table td {
     h2 {
         font-size: 18px !important;
     }
-
+    .price li{
+        display: block;
+        margin-left: 30px;
+    }
+    .price h2{
+        padding-top: 25px;
+    }
 }
