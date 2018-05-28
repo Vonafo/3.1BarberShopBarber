@@ -40,7 +40,7 @@ header{
   height: 15px;
   background-image: url(img/enter.png);
 }
-.burger{
+.hiddenlist{
   position: absolute;
   width: 70vw;
   height: 100vh;
@@ -48,10 +48,10 @@ header{
   z-index: 9999;
   display: none;
 }
-#toggle{
+#burger{
   display: none;
 }
-#toggle:checked ~ .burger{
+#burger:checked ~ .hiddenlist{
   display: block;
 }
 .list{
@@ -71,14 +71,14 @@ li a {
   text-decoration: none;
 }
 ul.desktop li.active a:after {
-    content: "";
-    display: block;
-    height: 4px;
-    background: #ffffff;
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  background: #ffffff;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
 }
 .desktop li {
   line-height: 70px;
@@ -273,12 +273,12 @@ main{
   width: 48%;
 }
 .gallery img{
-    border: 7px solid #fff;
-    display:  block;
-    margin-top: 30px;
+  border: 7px solid #fff;
+  display:  block;
+  margin-top: 30px;
 }
 .gallery button{
-    margin-top: 31px;
+  margin-top: 31px;
 }
 .fornews {
   padding-top: 30px;
@@ -403,7 +403,7 @@ footer{
 }
 .brownHover:hover {
   background: #723b08;
- border-color: #723b08;
+  border-color: #723b08;
 }
 .black{
   display: none;
@@ -413,122 +413,122 @@ footer{
   color:#000;
 }
 .vk:hover  .black , .fb:hover .black , .insta:hover .black {
-    display: block;
+  display: block;
 }
 .vk:hover  .white , .fb:hover  .white , .insta:hover .white  {
-    display: none;
+  display: none;
 }
 input:focus {
   outline: none !important;
   border-color: #723b08 !important;
 }
 @media only screen and (min-width:768px)  and (max-width:1024px) {
-    main , .footerContainer{
-      width: auto;
-      }
-    .news , .gallery ,.contactInfo , .getfeedback {
-      padding-left: 40px;
-    }
-    .desktop li {
-      padding: 0 7px;
-    }
+  main , .footerContainer{
+    width: auto;
   }
+  .news , .gallery ,.contactInfo , .getfeedback {
+    padding-left: 40px;
+  }
+  .desktop li {
+    padding: 0 7px;
+  }
+}
 @media only screen  and (max-width:767px) {
-    main , .footerContainer{
-      width: auto;
-    }
-    header{
-      min-height: 50px;
-    }
-    .list{
-      display: block;
-    }
-    .advantages{
-      padding: 50px 0;
-    }
-    .beforeEnter ,  .desktop{
-      display: none;
-    }
-    .mobileLogo {
-      display: block;
-    }
-    .fast, .cool, .expensive {
-      width: 100%
-    }
-    .news , .gallery , .contactInfo , .getfeedback {
-      padding-left: 0;
-      width: 100%;
-    }
-    .getfeedback {
-      margin-top: 0;
-      margin-bottom: 30px;
-    }
-    .gallery img {
-      margin: 15px auto;
-    }
-    .controls{
-        flex-wrap: wrap;
-      justify-content: center;
-    }
-    .controls button, .aboutUs button , .getfeedback input[type="submit"]{
-        width: 270px;
-    }
-    .generalBtn{
-      margin: 35px auto;
-    }
-    .form{
-      margin: 0 auto;
-    }
-    .news h2 , .gallery h2 , .contactInfo h2 , .getfeedback h2 {
-       text-align: center;
-    }
-    .fornews{
-      text-align: center;
-    }
-    .bigLogo, .doublespace{
-      display:none;
-    }
-    .smallContact, .social, .creators {
-      width: 100%;
-      padding-top: 15px;
-    }
-    .shadow{
-      display: none;
-    }
-    .smallContact p {
-      text-align: center;
-    }
-    .form{
-      width: 260px;
-      justify-content: center;
-    }
-    .login {
-      padding: 5px;
-    }
-    .close {
-      top: -30px;
-      right: -30px;
-    }
-    .forAuthor{
-      text-align: center;
-    }
-    .vonafo{
-      float: none;
-    }
-    .showmodal {
-      max-width: 335px;
-    }
+  main , .footerContainer{
+    width: auto;
+  }
+  header{
+    min-height: 50px;
+  }
+  .list{
+    display: block;
+  }
+  .advantages{
+    padding: 50px 0;
+  }
+  .beforeEnter ,  .desktop{
+    display: none;
+  }
+  .mobileLogo {
+    display: block;
+  }
+  .fast, .cool, .expensive {
+    width: 100%
+  }
+  .news , .gallery , .contactInfo , .getfeedback {
+    padding-left: 0;
+    width: 100%;
+  }
+  .getfeedback {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .gallery img {
+    margin: 15px auto;
+  }
+  .controls{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .controls button, .aboutUs button , .getfeedback input[type="submit"]{
+    width: 270px;
+  }
+  .generalBtn{
+    margin: 35px auto;
+  }
+  .form{
+    margin: 0 auto;
+  }
+  .news h2 , .gallery h2 , .contactInfo h2 , .getfeedback h2 {
+    text-align: center;
+  }
+  .fornews{
+    text-align: center;
+  }
+  .bigLogo, .doublespace{
+    display:none;
+  }
+  .smallContact, .social, .creators {
+    width: 100%;
+    padding-top: 15px;
+  }
+  .shadow{
+    display: none;
+  }
+  .smallContact p {
+    text-align: center;
+  }
+  .form{
+    width: 260px;
+    justify-content: center;
+  }
+  .login {
+    padding: 5px;
+  }
+  .close {
+    top: -30px;
+    right: -30px;
+  }
+  .forAuthor{
+    text-align: center;
+  }
+  .vonafo{
+    float: none;
+  }
+  .showmodal {
+    max-width: 335px;
+  }
 }
 @media only screen  and (max-width:350px) {
 
   .news , .gallery ,.contactInfo , .getfeedback {
     padding-left: 5px;
-    }
+  }
   .beforeEnter ,  .desktop{
-  display: none;
+    display: none;
   }
   .list{
-  display: block;
+    display: block;
   }
   .showmodal{
     width: 300px;
@@ -553,5 +553,5 @@ input:focus {
   .close {
     top: -30px;
     right: 0;
-    }
+  }
 }
