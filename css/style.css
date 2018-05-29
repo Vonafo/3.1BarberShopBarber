@@ -1,3 +1,4 @@
+@import "normalize.css";
 *{
   margin: 0;
   padding: 0;
@@ -18,7 +19,7 @@ header{
   display: flex;
   justify-content: center;
 }
-.navContainer {
+.navcontainer {
   justify-content: center;
   background: #000;
   width: 960px;
@@ -26,13 +27,13 @@ header{
 .desktop {
   display: inline;
 }
-.mobileLogo{
+.mobilelogo{
   display: none;
   padding-top: 15px;
   padding-bottom: 11px;
   margin: 0 auto;
 }
-.beforeEnter::after{
+.beforeenter::after{
   content: "";
   position: absolute;
   width: 18px;
@@ -70,16 +71,8 @@ li a {
   color: #fff;
   text-decoration: none;
 }
-ul.desktop li.active a:after {
-  content: "";
-  display: block;
-  height: 4px;
-  background: #ffffff;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+ul.desktop li.active a {
+  border-bottom: 4px solid #fff;
 }
 .desktop li {
   line-height: 70px;
@@ -89,28 +82,28 @@ ul.desktop li.active a:after {
   display: inline-block;
   position: relative;
 }
-.lazyCoder{
+.lazycoder{
   font-weight: bold;
 }
-.lazyCoder img {
+.lazycoder img {
   float: left;
 }
-.navContainer li:hover{
+.navcontainer li:hover{
   background: #333;
 }
-.beforeEnter:hover  {
+.beforeenter:hover  {
   padding-left: 15px;
   background: #333;
 }
-.beforeEnter:hover .beforeEnter::after{
+.beforeenter:hover .beforeenter::after{
   background-image: url(img/whiteenter.png);
 }
-.beforeEnter{
+.beforeenter{
   float: right;
   color: #fff;
   line-height: 70px;
 }
-.beforeEnter a{
+.beforeenter a{
   display: inline-block;
   width: 100%;
   font-weight: bold;
@@ -147,7 +140,8 @@ ul.desktop li.active a:after {
 .showmap iframe{
   border: 7px solid #fff;
 }
-.showmodal:target , .showmap:target{
+.showmodal:target ,
+.showmap:target{
   display: block;
   pointer-events: auto;
 }
@@ -168,7 +162,8 @@ ul.desktop li.active a:after {
   font-weight: bold;
   padding-top: 35px;
 }
-.loginform input[type="text"], input[type="password"]{
+.loginform input[type="text"],
+input[type="password"] {
   width: 300px;
 }
 #remember {
@@ -194,7 +189,8 @@ ul.desktop li.active a:after {
   background-position: center;
   background-repeat: no-repeat;
 }
-.forname, .forpassword{
+.forname,
+.forpassword{
   position: relative;
   width: 300px;
 }
@@ -219,7 +215,7 @@ main{
   width: 960px;
   margin: 0 auto;
 }
-.bigLogo {
+.biglogo {
   display: flex;
   justify-content: center;
   padding-top: 60px;
@@ -232,7 +228,9 @@ main{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.fast , .cool , .expensive {
+.fast ,
+.cool ,
+.expensive {
   width: 33.3%;
   text-align: center;
   font-size: 14px;
@@ -245,7 +243,7 @@ main{
   background: #fff;
   transform: rotate(45deg);
 }
-.aboutUs , .contact{
+.aboutus , .contact{
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
@@ -254,7 +252,7 @@ main{
   width: 100%;
   background-image: url(img/whtebg.png);
 }
-.aboutUs{
+.aboutus{
   margin-bottom: 35px;
 }
 .contact{
@@ -268,7 +266,10 @@ main{
   right: 0;
   margin: auto;
 }
-.news , .gallery ,.contactInfo , .getfeedback {
+.news ,
+.gallery ,
+.contactinfo,
+.getfeedback {
   padding-left: 80px;
   margin-top: 60px;
   width: 48%;
@@ -289,7 +290,8 @@ main{
   font-size: 14px;
   font-weight: bold;
 }
-.generalBtn {
+.generalbtn {
+  cursor:pointer;
   border:none;
   outline: none;
   margin:35px 0;
@@ -300,7 +302,7 @@ main{
   display: block;
   justify-content: center;
 }
-.generalBtn a{
+.generalbtn a{
   text-align: center;
   width: 100%;
   line-height: 42px;
@@ -345,25 +347,28 @@ footer{
   background: #333;
   width: 100%;
 }
-.footerContainer {
+.footercontainer {
   margin: 0 auto;
   width: 960px;
   display: flex;
   justify-content:space-around;
   flex-wrap: wrap;
 }
-.smallContact, .social , .creators{
+.smallcontact,
+.social,
+.creators{
   width: 30%;
   padding-top: 65px;
   margin-bottom: 30px;
 }
-.smallContact p {
+.smallcontact p {
   padding-top:4.5px;
   font-size: 14px;
   color: #fff;
   font-weight: bold;
 }
-.social, .creators {
+.social,
+.creators {
   text-align: center;
   font-size: 14px;
   color: #fff;
@@ -372,13 +377,15 @@ footer{
 .underline{
   text-decoration: underline;
 }
-.socialIcons {
+.socialicons {
   width: 140px;
   display: flex;
   justify-content: space-around;
   margin: 21px auto;
 }
-.vk , .fb , .insta {
+.vk ,
+.fb ,
+.insta {
   display: flex;
   width: 42px;
   height: 42px;
@@ -386,7 +393,7 @@ footer{
   align-items: center;
   justify-content: center;
 }
-.forAuthor {
+.forauthor {
   text-align: right;
   padding-right: 20px;
 }
@@ -402,21 +409,25 @@ footer{
   font-weight: bold;
   float: right;
 }
-.brownHover:hover {
+.brownhover:hover {
   background: #723b08;
   border-color: #723b08;
 }
 .black{
   display: none;
 }
-.whiteHover:hover{
+.whitehover:hover{
   background: #fff;
   color:#000;
 }
-.vk:hover  .black , .fb:hover .black , .insta:hover .black {
+.vk:hover  .black ,
+.fb:hover .black ,
+.insta:hover .black {
   display: block;
 }
-.vk:hover  .white , .fb:hover  .white , .insta:hover .white  {
+.vk:hover  .white ,
+.fb:hover  .white ,
+.insta:hover .white  {
   display: none;
 }
 input:focus {
@@ -424,10 +435,14 @@ input:focus {
   border-color: #723b08 !important;
 }
 @media only screen and (min-width:768px)  and (max-width:1024px) {
-  main , .footerContainer{
+  main ,
+  .footercontainer{
     width: auto;
   }
-  .news , .gallery ,.contactInfo , .getfeedback {
+  .news ,
+  .gallery ,
+  .contactinfo,
+  .getfeedback {
     padding-left: 40px;
   }
   .desktop li {
@@ -435,7 +450,8 @@ input:focus {
   }
 }
 @media only screen  and (max-width:767px) {
-  main , .footerContainer{
+  main ,
+  .footercontainer{
     width: auto;
   }
   header{
@@ -447,16 +463,22 @@ input:focus {
   .advantages{
     padding: 50px 0;
   }
-  .beforeEnter ,  .desktop{
+  .beforeenter ,
+  .desktop{
     display: none;
   }
-  .mobileLogo {
+  .mobilelogo {
     display: block;
   }
-  .fast, .cool, .expensive {
+  .fast,
+  .cool,
+  .expensive {
     width: 100%
   }
-  .news , .gallery , .contactInfo , .getfeedback {
+  .news ,
+  .gallery ,
+  .contactinfo ,
+  .getfeedback {
     padding-left: 0;
     width: 100%;
   }
@@ -471,32 +493,39 @@ input:focus {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .controls button, .aboutUs button , .getfeedback input[type="submit"]{
+  .controls button,
+  .aboutus button ,
+  .getfeedback input[type="submit"]{
     width: 270px;
   }
-  .generalBtn{
+  .generalbtn{
     margin: 35px auto;
   }
   .form{
     margin: 0 auto;
   }
-  .news h2 , .gallery h2 , .contactInfo h2 , .getfeedback h2 {
+  .news h2 ,
+  .gallery h2 ,
+  .contactinfo h2 ,
+  .getfeedback h2 {
     text-align: center;
   }
   .fornews{
     text-align: center;
   }
-  .bigLogo, .doublespace{
+  .biglogo, .doublespace{
     display:none;
   }
-  .smallContact, .social, .creators {
+  .smallcontact,
+  .social,
+  .creators {
     width: 100%;
     padding-top: 15px;
   }
   .shadow{
     display: none;
   }
-  .smallContact p {
+  .smallcontact p {
     text-align: center;
   }
   .form{
@@ -510,22 +539,26 @@ input:focus {
     top: -30px;
     right: -30px;
   }
-  .forAuthor{
+  .forauthor{
     text-align: center;
   }
   .vonafo{
-    float: none;
-  }
+     float: none;
+   }
   .showmodal {
     max-width: 335px;
   }
 }
 @media only screen  and (max-width:350px) {
 
-  .news , .gallery ,.contactInfo , .getfeedback {
+  .news ,
+  .gallery ,
+  .contactinfo ,
+  .getfeedback {
     padding-left: 5px;
   }
-  .beforeEnter ,  .desktop{
+  .beforeenter ,
+  .desktop{
     display: none;
   }
   .list{
@@ -534,7 +567,8 @@ input:focus {
   .showmodal{
     width: 300px;
   }
-  .showmodal input[type="text"] , input[type="password"]{
+  .showmodal input[type="text"] ,
+  input[type="password"]{
     display: block;
     width: 270px;
     margin: 20px auto;
@@ -544,7 +578,8 @@ input:focus {
     display: block;
     margin: 20px auto;
   }
-  .forname img, .forpassword img{
+  .forname img,
+  .forpassword img{
     right: 40px;
     top:15px;
   }

@@ -1,11 +1,11 @@
 @import "store.css";
 
-.barberUnit{
+.barberunit{
     display: flex;
     flex-wrap: wrap;
     margin: 60px 0 50px 0;
 }
-.smallCollage {
+.smallcollage {
     max-width: 460px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -22,18 +22,18 @@
     padding-top: 70px;
     font-size: 24px;
 }
-.smallCollage img {
+.smallcollage img {
     width: 100%;
     height: auto;
 }
-.maincollageImg {
+.maincollageimg {
     grid-area: 1 / 1/ span 3 / span 3;
 }
 .articul{
     color:#aba9a7;
     float:right;
 }
-.mainDescriptoin {
+.maindescriptoin {
     line-height:24px;
     padding-top:40px;
 }
@@ -67,7 +67,7 @@
      }
  }
 @media only screen and (max-width: 875px) {
-    .smallCollage{
+    .smallcollage{
         width: 75%;
         margin: 0 auto;
     }
@@ -80,7 +80,7 @@
         padding-top: 25px;
         text-align: center;
     }
-    .barberUnit{
+    .barberunit{
         margin-top: 35px;
     }
     .buttonforprice{

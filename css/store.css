@@ -1,5 +1,5 @@
 @import "price.css";
-.blackColor{
+.blackcolor{
     color:#000;
 }
 
@@ -12,7 +12,8 @@
     font-size: 24px;
     margin: 60px 0 35px 0;
 }
-.generator input[type="checkbox"], .generator input[type="radio"]{
+.generator input[type="checkbox"],
+.generator input[type="radio"]{
     display: none;
 }
 .generator label:hover {
@@ -43,7 +44,7 @@
     display: inline-block;
     vertical-align: bottom;
 }
-.lazyCircle::before{
+.lazycircle::before{
     position: absolute;
     top: -3px;
     left: 0;
@@ -66,7 +67,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.submitForms {
+.submitforms {
     cursor: pointer;
     color: #fff;
     font-size: 14px;
@@ -74,12 +75,12 @@
     width: 112px;
     height: 43px;
 }
-.gridOfGoods{
+.gridofgoods{
     margin-top: 60px;
     width:710px;
     float:left;
 }
-.formsForStore::after , .last::after  {
+.formsforstore::after , .last::after  {
     content: "";
     display: table;
     clear: both;
@@ -105,13 +106,13 @@
     display: block;
     margin: 0 auto;
 }
-.greyPrice{
+.greyprice{
     width: 185px;
     background: #e5e5e5;
     height: 43px;
     margin:  20px auto;
 }
-.greyPrice p {
+.greyprice p {
     position: relative;
     line-height: 43px;
     padding-left: 29px;
@@ -131,21 +132,23 @@
     float: left;
     width: 100%;
 }
-.blackPage , .whitePage{
+.blackpage ,
+.whitepage{
     display: inline-block;
     text-align: center;
     width: 43px;
     height: 43px;
     margin-right: 8px;
 }
-.blackPage p , .whitePage p{
+.blackpage p ,
+.whitepage p{
     line-height: 43px;
 }
-.blackPage {
+.blackpage {
     background: #000;
     color: #fff;
 }
-.whitePage{
+.whitepage{
     background: #fff;
     color: #000;
 }@media only screen and (max-width:1024px){
@@ -157,7 +160,7 @@
     .generator {
         width: auto;
     }
-    .gridOfGoods{
+    .gridofgoods{
         width: 100%;
     }
     .price {
@@ -175,7 +178,7 @@
     .price {
         padding: 10px;
     }
-    .gridOfGoods{
+    .gridofgoods{
         width: auto;
     }
     .generator label{
@@ -188,12 +191,12 @@
     .pages{
         padding-left: calc(10%/4);
     }
-    .forPosition{
+    .forposition{
         left: 15%;
     }
 }
 @media only screen and (max-width:450px){
-    .submitForms {
+    .submitforms {
         width: 85%;
     }
     .goods {
