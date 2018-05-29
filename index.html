@@ -11,7 +11,7 @@
 <body>
     <header>
     <div class="navcontainer">
-      <img class="mobilelogo" src="css/img/smalllogo.png" alt="">
+      <img class="mobilelogo" src="css/img/smalllogo.png" alt="imageForReaders">
       <input type="checkbox" id="burger">
       <label for="burger" class="list"></label>
       <div class="hiddenlist">
@@ -36,12 +36,14 @@
       </div>
       <div id="modal" class="showmodal">
         <div class="login">
-        <a class="close" href="#close"><img src="css/img/closemodal.png" alt=""></a>
+        <a class="close" href="#close"><img src="css/img/closemodal.png" alt="imageForReaders"></a>
         <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
         <p>ВВедите пожалуйста свой логин и пароль</p>
         <div class="loginform">
-          <div class="forname"><input placeholder="ЛОГИН" type="text"> <img src="css/img/user.png" alt=""></div>
-          <div class="forpassword"><input placeholder="ПАРОЛЬ" type="password"><img src="css/img/password.png" alt=""></div>
+          <div class="forname"><input placeholder="ЛОГИН" type="text"></div>
+          <div class="forpassword">
+            <input placeholder="ПАРОЛЬ" type="password" >
+          </div>
           <input type="checkbox" id="remember">
           <label for="remember">ЗАПОМНИТЬ МЕНЯ</label>
           <p class="forgetpass">Я ЗАБЫЛ ПАРОЛЬ!</p>
@@ -53,7 +55,7 @@
   </header>
     <main>
     <div class="biglogo">
-      <img src="css/img/biglogo.png" alt="">
+      <img src="css/img/biglogo.png" alt="imageForReaders">
     </div>
     <div class="advantages">
       <div class="fast">
@@ -79,7 +81,7 @@
       </div>
     </div>
     <div class="aboutus">
-      <img class="shadow" src="css/img/shadow.png" alt="">
+      <img class="shadow" src="css/img/shadow.png" alt="imageForReaders">
       <div class="news">
         <h2>НОВОСТИ</h2>
         <div class="fornews">
@@ -93,26 +95,25 @@
           СТРОЙНЫЕ РЯДЫ</p>
           <p>18 января</p>
         </div>
-        <button class="generalbtn brownhover">
-          <a href="#">ВСЕ НОВОСТИ</a>
-        </button>
+        <a class="nodecoration" href="#"><button  disabled class="generalbtn brownhover">
+          ВСЕ НОВОСТИ
+        </button></a>
       </div>
       <div class="gallery">
         <h2>ФОТОГАЛЕРЕЯ</h2>
-        <img src="css/img/slide1.jpg" alt="">
+        <img src="css/img/slide1.jpg" alt="imageForReaders">
         <div class="controls">
-            <button  class="generalbtn brownhover">
-              <a href="#">НАЗАД</a>
-            </button>
-            <button class="generalbtn brownhover">
-              <a href="#">ВПЕРЕД</a>
-            </button>
+          <a href="#" class="nodecoration">
+            <button disabled  class="generalbtn brownhover">НАЗАД</button>
+          </a>
+          <a href="#" class="nodecoration">
+            <button disabled class="generalbtn brownhover">ВПЕРЕД</button>
+          </a>
         </div>
       </div>
     </div>
-    <div class="space"></div>
     <div class="contact">
-      <img class="shadow" src="css/img/shadow.png" alt="">
+      <img class="shadow" src="css/img/shadow.png" alt="imageForReaders">
       <div class="contactinfo">
         <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
         <div class="fornews">
@@ -126,16 +127,16 @@
           <p>СБ - ВС: С 10:00 ДО 19:00</p>
         </div>
         <div id="map" class="showmap">
-          <a class="close" href="#close"><img src="css/img/closemodal.png" alt=""></a>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.296161823272!2d30.523065537566524!3d50.45962679553298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9bb1b5375abbc47!2sGoogle+Ukraine!5e0!3m2!1sru!2sua!4v1527343606045" width="100%" height="100%"  allowfullscreen></iframe>
+          <a class="close" href="#close"><img src="css/img/closemodal.png" alt="imageForReaders"></a>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.296161823272!2d30.523065537566524!3d50.45962679553298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9bb1b5375abbc47!2sGoogle+Ukraine!5e0!3m2!1sru!2sua!4v1527343606045"  allowfullscreen></iframe>
         </div>
         <div class="controls">
-          <button class="generalbtn brownhover">
-            <a href="#map">КАК ПРОЕХАТЬ</a>
-          </button>
-          <button class="generalbtn brownhover">
-            <a href="#">ОБРАТНАЯ ЗВЯЗЬ</a>
-          </button>
+          <a href="#map" class="nodecoration"><button  class="generalbtn brownhover">
+            КАК ПРОЕХАТЬ
+          </button></a>
+          <a href="#" class="nodecoration"><button  disabled class="generalbtn brownhover">
+            ОБРАТНАЯ ЗВЯЗЬ
+          </button></a>
       </div>
       </div>
       <div class="getfeedback">
@@ -145,8 +146,8 @@
           С ВАМИ ДЛЯ ПОТВЕРЖДЕНИЯ БРОНИ</p>
         </div>
         <div class="form">
-          <input placeholder="ДАТА"  type="text" onfocus="(this.type='date')"  id="date">
-          <input placeholder="ВРЕМЯ" type="text" onfocus="(this.type='time')"  id="time">
+          <input placeholder="ДАТА"  type="text"  id="date">
+          <input placeholder="ВРЕМЯ" type="text"  id="time">
           <input placeholder="ВАШЕ ИМЯ" type="text" id="name">
           <input placeholder="ВАШ ТЕЛЕФОН" type="tel" id="phone">
           <input type="submit" class="brownHover" value="ОТПРАВИТЬ">
@@ -165,25 +166,26 @@
         <div class="social">
           <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
           <div class="socialicons">
-            <div class="vk whitehover">
+            <a href="https://vk.com/vonafo"><div class="vk whitehover">
               <img src="css/img/vk.png" alt="vk" class="white">
               <img src="css/img/vkblack.png" alt="vk" class="black">
-            </div>
-            <div class="fb whitehover">
+            </div></a>
+            <a href="https://www.facebook.com/vonafo"><div class="fb whitehover">
               <img src="css/img/fb.png" alt="fb" class="white">
               <img src="css/img/fbblack.png" alt="fb" class="black">
-            </div>
-            <div class="insta whitehover">
+            </div></a>
+            <a href="https://www.instagram.com/vonafo/"><div class="insta whitehover">
               <img src="css/img/instagram.png" alt="instagram" class="white">
               <img src="css/img/instagramblack.png" alt="instagram" class="black">
-            </div>
+            </div></a>
           </div>
         </div>
         <div class="creators">
           <p class="forauthor">РАЗРАБОТАНО!</p>
-          <div class="vonafo whitehover"><p>VONAFO</p></div>
+          <div onclick="easter()" class="vonafo whitehover"><p>VONAFO</p></div>
         </div>
       </div>
     </footer>
+    <script src="js/myscript.js"></script>
 </body>
 </html>

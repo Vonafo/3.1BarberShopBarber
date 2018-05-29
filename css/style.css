@@ -1,5 +1,7 @@
 @import "normalize.css";
 *{
+  user-select: none;
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -41,9 +43,12 @@ header{
   height: 15px;
   background-image: url(img/enter.png);
 }
+
 .hiddenlist{
+  padding-left: 15px;
+  padding-top: 10px;
   position: absolute;
-  width: 70vw;
+  width: 100vw;
   height: 100vh;
   background: black;
   z-index: 9999;
@@ -82,6 +87,32 @@ ul.desktop li.active a {
   display: inline-block;
   position: relative;
 }
+.forname::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("img/user.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.forpassword::after{
+  content: "";
+  width: 15px;
+  height: 17px;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("img/password.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .lazycoder{
   font-weight: bold;
 }
@@ -104,6 +135,9 @@ ul.desktop li.active a {
   line-height: 70px;
 }
 .beforeenter a{
+  -webkit-appearance:button;
+  -moz-appearance:button;
+  appearance:button;
   display: inline-block;
   width: 100%;
   font-weight: bold;
@@ -139,11 +173,21 @@ ul.desktop li.active a {
 }
 .showmap iframe{
   border: 7px solid #fff;
+  width: 100%;
+  height:80%;
 }
 .showmodal:target ,
 .showmap:target{
   display: block;
   pointer-events: auto;
+}
+.nodecoration{
+  -webkit-appearance:button;
+  -moz-appearance:button;
+  appearance:button;
+  text-decoration: none;
+  display: block;
+  width: 100%;
 }
 .mapbg{
   margin: 0.25% auto;
@@ -161,6 +205,7 @@ ul.desktop li.active a {
   font-size: 14px;
   font-weight: bold;
   padding-top: 35px;
+  margin-bottom: 20px;
 }
 .loginform input[type="text"],
 input[type="password"] {
@@ -170,13 +215,18 @@ input[type="password"] {
   display: none;
 }
 .loginform label {
+  padding-left: 30px;
+  position: relative;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
 }
 .loginform label::before {
-  margin-right: 5px;
-  margin-top: 15px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
   content: "";
   width: 20px;
   height: 20px;
@@ -194,10 +244,8 @@ input[type="password"] {
   position: relative;
   width: 300px;
 }
-.forname img ,.forpassword img{
-  position: absolute;
-  top: 33px;
-  right: 10px;
+.forname{
+  margin-bottom: 20px;
 }
 .forgetpass{
   display: inline-block;
@@ -291,25 +339,21 @@ main{
   font-weight: bold;
 }
 .generalbtn {
-  cursor:pointer;
-  border:none;
+  font-size: 14px;
+  line-height: 42px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
   outline: none;
-  margin:35px 0;
+  margin: 35px 0;
   margin-right: 20px;
   width: 140px;
   height: 42px;
   background: #000;
   display: block;
   justify-content: center;
-}
-.generalbtn a{
-  text-align: center;
-  width: 100%;
-  line-height: 42px;
-  color:#fff;
-  font-size: 14px;
   text-decoration: none;
-  font-weight: bold;
 }
 .controls {
   display: flex;
@@ -328,7 +372,6 @@ input {
   padding-left: 10px;
   color: #000;
   font-size: 14px;
-  margin-top: 20px;
 }
 ::-webkit-input-placeholder {
   color: #000;
@@ -409,6 +452,10 @@ footer{
   font-weight: bold;
   float: right;
 }
+.nonactivebtn:hover .generalbtn{
+  background: #723b08;
+  border-color: #723b08;
+}
 .brownhover:hover {
   background: #723b08;
   border-color: #723b08;
@@ -487,6 +534,8 @@ input:focus {
     margin-bottom: 30px;
   }
   .gallery img {
+    width: 80%;
+    height: auto;
     margin: 15px auto;
   }
   .controls{
@@ -495,8 +544,11 @@ input:focus {
   }
   .controls button,
   .aboutus button ,
-  .getfeedback input[type="submit"]{
+  .getfeedback input[type="submit"],
+  .form input[type="text"],
+  .form input[type="tel"]{
     width: 270px;
+    margin: 10px auto;
   }
   .generalbtn{
     margin: 35px auto;
@@ -513,7 +565,7 @@ input:focus {
   .fornews{
     text-align: center;
   }
-  .biglogo, .doublespace{
+  .biglogo{
     display:none;
   }
   .smallcontact,
@@ -533,11 +585,22 @@ input:focus {
     justify-content: center;
   }
   .login {
-    padding: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  .forpassword{
+    margin: 20px auto ;
+  }
+  .forname{
+    margin: 0 auto 20px;
+  }
+  .forgetpass{
+    display: block;
+    margin: 0 auto 20px;
   }
   .close {
     top: -30px;
-    right: -30px;
+    right: 15px;
   }
   .forauthor{
     text-align: center;
@@ -546,7 +609,7 @@ input:focus {
      float: none;
    }
   .showmodal {
-    max-width: 335px;
+    width: 100%;
   }
 }
 @media only screen  and (max-width:350px) {
@@ -556,6 +619,11 @@ input:focus {
   .contactinfo ,
   .getfeedback {
     padding-left: 5px;
+  }
+  .forname,
+  .forpassword{
+    width: 270px;
+    margin: 0 auto;
   }
   .beforeenter ,
   .desktop{
@@ -573,15 +641,10 @@ input:focus {
     width: 270px;
     margin: 20px auto;
   }
-  .showmodal input[type="submit"]{
+  .showmodal input[type="submit"]  {
     width: 270px;
     display: block;
     margin: 20px auto;
-  }
-  .forname img,
-  .forpassword img{
-    right: 40px;
-    top:15px;
   }
   .forgetpass{
     margin-left: 5px;

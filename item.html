@@ -11,7 +11,7 @@
 <body>
 <header>
     <div class="navcontainer">
-        <img class="mobilelogo" src="css/img/smalllogo.png" alt="barber-logo">
+        <img class="mobilelogo" src="css/img/smalllogo.png" alt="imageForReaders">
         <input type="checkbox" id="burger">
         <label for="burger" class="list"></label>
         <div class="hiddenlist">
@@ -25,7 +25,7 @@
             </ul>
         </div>
         <ul class="desktop">
-            <li><a href="index.html"><img class="backtomain" src="css/img/smalllogo.png" alt="barber-logo"></a></li>
+            <li><a href="index.html"><img class="backtomain" src="css/img/smalllogo.png" alt=""></a></li>
             <li><a href="index.html">ИНФОРМАЦИЯ</a></li>
             <li><a href="#">НОВОСТИ</a></li>
             <li><a href="pricelist.html">ПРАЙС-ЛИСТ</a></li>
@@ -37,12 +37,14 @@
         </div>
         <div id="modal" class="showmodal">
             <div class="login">
-                <a class="close" href="#close"><img src="css/img/closemodal.png" alt="exit"></a>
+                <a class="close" href="#close"><img src="css/img/closemodal.png" alt="imageForReaders"></a>
                 <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
                 <p>ВВедите пожалуйста свой логин и пароль</p>
                 <div class="loginform">
-                    <div class="forname"><input placeholder="ЛОГИН" type="text"> <img src="css/img/user.png" alt=""></div>
-                    <div class="forpassword"><input placeholder="ПАРОЛЬ" type="password"><img disabled src="css/img/password.png" alt=""></div>
+                    <div class="forname"><input placeholder="ЛОГИН" type="text"></div>
+                    <div class="forpassword">
+                        <input placeholder="ПАРОЛЬ" type="password" >
+                    </div>
                     <input type="checkbox" id="remember">
                     <label for="remember">ЗАПОМНИТЬ МЕНЯ</label>
                     <p class="forgetpass">Я ЗАБЫЛ ПАРОЛЬ!</p>
@@ -56,9 +58,9 @@
     <div class="price">
         <h2>набор для путешествий «Baxter of California»</h2>
         <ul>
-            <li class="nonesqr">главная</li>
-            <li class="smallsqr blackcolor">МАГАЗИН</li>
-            <li class="smallsqr blackcolor">СРЕДСТВА ДЛЯ УХОДА</li>
+            <a href="index.html"><li class="nonesqr">главная</li></a>
+            <a href="store.html"><li class="smallsqr blackcolor">МАГАЗИН</li></a>
+            <a href="store.html"><li class="smallsqr blackcolor">СРЕДСТВА ДЛЯ УХОДА</li></a>
             <li class="smallsqr">набор для путешествий «Baxter of California»</li>
         </ul>
     </div>
@@ -77,7 +79,7 @@
             </p>
             <div class="greyprice buttonforprice">
                 <p>2 900 РУБ.
-                    <button class="buy generalbtn brownhover "><a href="#">КУПИТЬ</a></button>
+                    <a href="#" class="nodecoration"><button disabled class="buy generalbtn brownhover ">КУПИТЬ</button></a>
                 </p>
             </div>
             <h2>В набор входят:</h2>
@@ -104,18 +106,18 @@
         <div class="social">
             <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
             <div class="socialicons">
-                <div class="vk whitehover">
+                <a href="https://vk.com/vonafo"><div class="vk whitehover">
                     <img src="css/img/vk.png" alt="vk" class="white">
                     <img src="css/img/vkblack.png" alt="vk" class="black">
-                </div>
-                <div class="fb whitehover">
+                </div></a>
+                <a href="https://www.facebook.com/vonafo"><div class="fb whitehover">
                     <img src="css/img/fb.png" alt="fb" class="white">
                     <img src="css/img/fbblack.png" alt="fb" class="black">
-                </div>
-                <div class="insta whitehover">
+                </div></a>
+                <a href="https://www.instagram.com/vonafo/"><div class="insta whitehover">
                     <img src="css/img/instagram.png" alt="instagram" class="white">
                     <img src="css/img/instagramblack.png" alt="instagram" class="black">
-                </div>
+                </div></a>
             </div>
         </div>
         <div class="creators">

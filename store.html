@@ -11,7 +11,7 @@
 <body>
 <header>
   <div class="navcontainer">
-    <img class="mobilelogo" src="css/img/smalllogo.png" alt="">
+    <img class="mobilelogo" src="css/img/smalllogo.png" alt="imageForReaders">
     <input type="checkbox" id="burger">
     <label for="burger" class="list"></label>
     <div class="hiddenlist">
@@ -37,16 +37,18 @@
     </div>
     <div id="modal" class="showmodal">
       <div class="login">
-        <a class="close" href="#close"><img src="css/img/closemodal.png" alt=""></a>
+        <a class="close" href="#close"><img src="css/img/closemodal.png" alt="imageForReaders"></a>
         <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
         <p>ВВедите пожалуйста свой логин и пароль</p>
         <div class="loginform">
-          <div class="forname"><input placeholder="ЛОГИН" type="text"> <img src="css/img/user.png" alt=""></div>
-          <div class="forpassword"><input placeholder="ПАРОЛЬ" type="password"><img disabled src="css/img/password.png" alt=""></div>
+          <div class="forname"><input placeholder="ЛОГИН" type="text"></div>
+          <div class="forpassword">
+            <input placeholder="ПАРОЛЬ" type="password" >
+          </div>
           <input type="checkbox" id="remember">
           <label for="remember">ЗАПОМНИТЬ МЕНЯ</label>
           <p class="forgetpass">Я ЗАБЫЛ ПАРОЛЬ!</p>
-          <input type="submit" class="brownHover" value="ВОЙТИ">
+          <input type="submit" class="brownhover" value="ВОЙТИ">
         </div>
       </div>
     </div>
@@ -56,8 +58,8 @@
   <div class="price">
     <h2>СРЕДСТВА ДЛЯ УХОДА</h2>
     <ul>
-      <li class="nonesqr">главная</li>
-      <li class="smallsqr blackcolor">МАГАЗИН</li>
+      <a href="index.html"><li class="nonesqr">главная</li></a>
+      <a href="store.html"><li class="smallsqr blackcolor">МАГАЗИН</li></a>
       <li class="smallsqr">СРЕДСТВА ДЛЯ УХОДА</li>
     </ul>
     <div class="formsforstore">
@@ -84,60 +86,60 @@
           <input name="types" type="radio" id="accessory">
           <label class="lazycircle"  for="accessory">Аксессуары</label>
         </form>
-        <button class="generalbtn brownhover submitforms"><a href="item.html">ПОКАЗАТЬ</a></button>
+        <a href="#" class="nodecoration"><button disabled class="generalbtn brownhover submitforms">ПОКАЗАТЬ</button></a>
       </div>
       <div class="gridofgoods">
         <div class="goods">
-          <img src="css/img/item1.png" alt="">
+          <img src="css/img/item1.png" alt="imageForReaders">
           <p>Набор для путешествий  «Baxter of California»</p>
           <div class="greyprice">
             <p>2 900 РУБ.
-              <button class="buy generalbtn brownhover "><a href="item.html">КУПИТЬ</a></button>
+              <a href="item.html" class="nodecoration"><button class="buy generalbtn brownhover ">КУПИТЬ</button></a>
             </p>
           </div>
         </div>
         <div class="goods">
-          <img src="css/img/item2.png" alt="">
+          <img src="css/img/item2.png" alt="imageForReaders">
           <p>Увлажняющий кондиционер «Baxter of California»</p>
           <div class="greyprice">
             <p>750 РУБ.
-              <button class="buy generalbtn brownhover "><a href="item.html">КУПИТЬ</a></button>
+              <a href="item.html" class="nodecoration"><button class="buy generalbtn brownhover ">КУПИТЬ</button></a>
             </p>
           </div>
         </div>
         <div class="goods">
-          <img src="css/img/item3.png" alt="">
+          <img src="css/img/item3.png" alt="imageForReaders">
           <p>Гель для волос «SUAVECITO»</p>
           <div class="greyprice">
             <p>290 РУБ.
-              <button class="buy generalbtn brownhover "><a href="item.html">КУПИТЬ</a></button>
+              <a href="item.html" class="nodecoration"><button class="buy generalbtn brownhover ">КУПИТЬ</button></a>
             </p>
           </div>
         </div>
         <div class="goods">
-          <img src="css/img/item4.png" alt="">
+          <img src="css/img/item4.png" alt="imageForReaders">
           <p>Глина для укладки волос  «American crew»</p>
           <div class="greyprice">
             <p>500 РУБ.
-              <button class="buy generalbtn brownhover "><a href="item.html">КУПИТЬ</a></button>
+              <a href="item.html" class="nodecoration"><button class="buy generalbtn brownhover ">КУПИТЬ</button></a>
             </p>
           </div>
         </div>
         <div class="goods">
-          <img src="css/img/item5.png" alt="">
+          <img src="css/img/item5.png" alt="imageForReaders">
           <p>Гель для волос «AMERICAN CREW»</p>
           <div class="greyprice">
             <p>300 РУБ.
-              <button class="buy generalbtn brownhover "><a href="item.html">КУПИТЬ</a></button>
+              <a href="item.html" class="nodecoration"><button class="buy generalbtn brownhover ">КУПИТЬ</button></a>
             </p>
           </div>
         </div>
         <div class="goods last">
-          <img src="css/img/item6.png" alt="">
+          <img src="css/img/item6.png" alt="imageForReaders">
           <p>Набор для бритья  «Baxter of California»</p>
           <div class="greyprice">
             <p>3 900 РУБ.
-              <button class="buy generalbtn brownhover "><a href="item.html">КУПИТЬ</a></button>
+              <a href="item.html" class="nodecoration"><button class="buy generalbtn brownhover ">КУПИТЬ</button></a>
             </p>
           </div>
         </div>

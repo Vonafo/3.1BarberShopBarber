@@ -11,7 +11,7 @@
 <body>
 <header>
   <div class="navcontainer">
-    <img class="mobilelogo" src="css/img/smalllogo.png" alt="">
+    <img class="mobilelogo" src="css/img/smalllogo.png" alt="imageForReaders">
     <input type="checkbox" id="burger">
     <label for="burger" class="list"></label>
     <div class="hiddenlist">
@@ -20,7 +20,7 @@
         <li class="lazycoder"><a href="#">НОВОСТИ</a></li>
         <li class="lazycoder"><a href="pricelist.html">ПРАЙС-ЛИСТ</a></li>
         <li class="lazycoder"><a href="store.html">МАГАЗИН</a></li>
-        <li class="lazyCoder"><a href="#">КОНТАКТЫ</a></li>
+        <li class="lazycoder"><a href="#">КОНТАКТЫ</a></li>
         <li class="lazycoder"><a сlass="enter" href="#modal">ВХОД</a></li>
       </ul>
     </div>
@@ -37,16 +37,18 @@
     </div>
     <div id="modal" class="showmodal">
       <div class="login">
-        <a class="close" href="#close"><img src="css/img/closemodal.png" alt=""></a>
+        <a class="close" href="#close"><img src="css/img/closemodal.png" alt="imageForReaders"></a>
         <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
         <p>ВВедите пожалуйста свой логин и пароль</p>
         <div class="loginform">
-          <div class="forname"><input placeholder="ЛОГИН" type="text"> <img src="css/img/user.png" alt=""></div>
-          <div class="forpassword"><input placeholder="ПАРОЛЬ" type="password"><img disabled src="css/img/password.png" alt=""></div>
+          <div class="forname"><input placeholder="ЛОГИН" type="text"></div>
+          <div class="forpassword">
+            <input placeholder="ПАРОЛЬ" type="password" >
+          </div>
           <input type="checkbox" id="remember">
           <label for="remember">ЗАПОМНИТЬ МЕНЯ</label>
           <p class="forgetpass">Я ЗАБЫЛ ПАРОЛЬ!</p>
-          <input type="submit" class="brownHover" value="ВОЙТИ">
+          <input type="submit" class="brownhover" value="ВОЙТИ">
         </div>
       </div>
     </div>
@@ -56,7 +58,7 @@
   <div class="price hyperlinks">
     <h2>Прайс-лист</h2>
     <ul>
-      <li class="nonesqr" >главная</li>
+      <a href="index.html"><li class="nonesqr" >главная</li></a>
       <li class="smallsqr">прайс-лист</li>
     </ul>
   </div>
@@ -117,18 +119,18 @@
     <div class="social">
       <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
       <div class="socialicons">
-        <div class="vk whitehover">
+        <a href="https://vk.com/vonafo"><div class="vk whitehover">
           <img src="css/img/vk.png" alt="vk" class="white">
           <img src="css/img/vkblack.png" alt="vk" class="black">
-        </div>
-        <div class="fb whitehover">
+        </div></a>
+        <a href="https://www.facebook.com/vonafo"><div class="fb whitehover">
           <img src="css/img/fb.png" alt="fb" class="white">
           <img src="css/img/fbblack.png" alt="fb" class="black">
-        </div>
-        <div class="insta whitehover">
+        </div></a>
+        <a href="https://www.instagram.com/vonafo/"><div class="insta whitehover">
           <img src="css/img/instagram.png" alt="instagram" class="white">
           <img src="css/img/instagramblack.png" alt="instagram" class="black">
-        </div>
+        </div></a>
       </div>
     </div>
     <div class="creators">
