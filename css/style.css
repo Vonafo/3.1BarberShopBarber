@@ -135,9 +135,6 @@ ul.desktop li.active a {
   line-height: 70px;
 }
 .beforeenter a{
-  -webkit-appearance:button;
-  -moz-appearance:button;
-  appearance:button;
   display: inline-block;
   width: 100%;
   font-weight: bold;
@@ -182,9 +179,6 @@ ul.desktop li.active a {
   pointer-events: auto;
 }
 .nodecoration{
-  -webkit-appearance:button;
-  -moz-appearance:button;
-  appearance:button;
   text-decoration: none;
   display: block;
   width: 100%;
@@ -369,6 +363,7 @@ input {
   background-color: rgba(255,255,255,0);
   width: 140px;
   height: 40px;
+  margin-top: 20px;
   padding-left: 10px;
   color: #000;
   font-size: 14px;
